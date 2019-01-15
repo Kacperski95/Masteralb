@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Kacperski95 - Challenge 1 from Weekly WebDev Challenge</title>
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/media-queries.css">
+</head>
+
+<body>
+
+    <!-- Logo -->
+    <div class="logo">
+        <img src="img/logo.png" alt>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Left Column -->
+        <div class="column">
+           
+            <!-- Register Container -->
+            <span class="form-title">Register Form</span>
+            <div class="tiles">
+                <div class="tile-content">
+                    <form action="">
+                        <input class="username" type="text" name="name" placeholder="Username" required="">
+                        <input class="password" type="password" name="password" placeholder="Password" required="">
+                        <input class="password" type="password" name="Confirm password" placeholder="Confirm password" required="">
+                        <input class="email" type="email" name="email" placeholder="Email" required="">
+                        <input class="location" type="cities" name="location" placeholder="Location" required="">
+                    </form>
+                    <div class="checkbox-wrapper">
+                        <input id="definitions" type="checkbox" name="definitions-checkbox" value="" required="" class="checkbox">
+                        <label for="definitions">I have read and accept the terms of use.</label>
+                    </div>
+                    <button type="submit" class="btn">Sign up</button>
+                </div>
+            </div>
+
+            <!-- Send Container -->
+            <span class="form-title">Send Email</span>
+            <div class="tiles">
+                <div class="tile-content">
+                    <form action="">
+                        <input class="username" type="text" name="name" placeholder="Your name" required="">
+                        <input class="email" type="email" name="email" placeholder="Your Email" required="">
+                        <textarea class="textarea" placeholder=" Type your message ..." required=""></textarea>
+                        <div class="checkbox-wrapper">
+                            <input id="email" type="checkbox" name="email-checkbox" value="" required="" class="checkbox">
+                            <label for="definitions">Send a copy to my email</label>
+                        </div>
+                        <button type="submit" class="btn">Send mail</button>
+                
+                    </form>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="column">
+            <!-- Sign in Form - Container -->
+            <span class="form-title">Sign In Form</span>
+            <div class="tiles">
+                <div class="tile-content">
+                    <form action="">
+                        <input class="username" type="text" name="name" placeholder="Username" required="">
+                        <input class="password" type="password" name="password" placeholder="Password" required="">
+                    </form>
+
+                    <div class="row-btn">
+                        <div class="checkbox-wrapper">
+                            <input id="remember" type="checkbox" name="remember-checkbox" value="Car" class="checkbox">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Recover form Container -->
+            <span class="form-title">Recover Form</span>
+            <div class="tiles">
+                <div class="tile-content">
+                    <form action="">
+                        <input class="email" type="email" name="email" placeholder="Enter your Email" required="">
+                        <input class="phone" type="text" name="phone" placeholder="Enter your phone number" required="">
+
+                        <div class="row-btn">
+                            <button type="submit" class="btn">Send</button>
+                            <button type="submit" class="btn" disabled>Done </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Subscribe Container -->
+
+            <span class="form-title">Subscribe Form</span>
+            <div class="tiles">
+                <div class="tile-content">
+                    <form action="">
+                        <input class="email" type="email" name="email" placeholder="Enter your Email" required="">
+
+                        <div class="row-btn">
+                            <button type="submit" class="btn">Subscribe</button>
+                            <button type="submit" class="btn danger">No, Thanks</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="logo logo-bottom">
+                <img src="img/logo-bottom.png" alt>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+/* Media queries */
+
+@media (max-width: 476px) {
+  .logo img {
+    margin: 35px 0 15px 0;
+  }
+
+  .logo.logo-bottom img {
+    margin: 10px 0 40px 0;
+  }
+
+  .form-title {
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+
+  .tiles {
+    padding: 16px;
+    margin-bottom: 25px;
+  }
+
+  .tiles .tile-content {
+    padding: 18px;
+  }
+
+  .tiles .tile-content input, .tiles .tile-content .textarea {
+    height: 35px;
+    font-size: 14px;
+  }
+
+.tiles .tile-content .textarea {
+    height: 180px;
+  }
+
+  .tiles .tile-content .row-btn {
+    margin-top: 18px;
+  }
+
+  .tiles .btn {
+    font-size: 14px;
+    padding: 8px 8px;
+  }
+
+  .checkbox-wrapper {
+    font-size: 14px;
+  }
+
+  .checkbox-wrapper input.checkbox, .checkbox-wrapper .tiles .tile-content .checkbox.textarea, .tiles .tile-content .checkbox-wrapper .checkbox.textarea {
+    width: 22px;
+    height: 22px;
+    min-height: 22px;
+    min-width: 22px;
+  }
+
+  .checkbox-wrapper input.checkbox:checked:after, .checkbox-wrapper .tiles .tile-content .checkbox.textarea:checked:after, .tiles .tile-content .checkbox-wrapper .checkbox.textarea:checked:after {
+    height: 12px;
+    width: 12px;
+  }
+
+  .checkbox-wrapper label {
+    margin-left: 10px;
+  }
+}
+ 

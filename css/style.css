@@ -1,0 +1,347 @@
+html {
+    font-family: 'Titillium Web', sans-serif;
+}
+ 
+body {
+    background-image: url(../img/background.png);
+    background-position: center top;
+    background-size: cover;
+    background-position: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    margin: 55px 0 25px 0;
+    max-width: 100vw;
+    height: auto;
+    opacity: 0.4;
+    filter: drop-shadow(1px 2px 2px rgba(2, 3, 3, 0.42));
+}
+
+.logo.logo-bottom img {
+    margin: 10px 0 80px 0;
+    max-width: 100vw;
+    height: auto;
+    opacity: 0.4;
+    filter: drop-shadow(1px 2px 2px rgba(2, 3, 3, 0.13));
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+
+.column {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+    
+}
+
+.form-title {
+    margin-bottom: 18px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 2px 2px rgba(43, 1, 0, 0.75);
+}
+
+.tiles {
+    background-color: rgba(0, 0, 0, 0.23);
+    padding: 20px;
+    width: 380px;
+    max-width: calc(100% - 40px);
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+.tiles .tile-content {
+    background-color: #f4f4f4;
+    padding: 22px;
+    border-radius: 3px;
+    box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.13);
+}
+
+form {
+    display: block;
+    margin-top: 0;
+}
+
+.tiles .tile-content input.username, .tiles .tile-content .username.textarea {
+  background-image: url("../img/username.png");
+  background-position: 17px center;
+}
+
+.tiles .tile-content input.password, .tiles .tile-content .password.textarea {
+  background-image: url("../img/password.png");
+  background-position: 17px center;
+}
+
+.tiles .tile-content input.email, .tiles .tile-content .email.textarea {
+  background-image: url("../img/email.png");
+  background-position: 17px center;
+}
+
+.tiles .tile-content input.location, .tiles .tile-content .location.textarea {
+  background-image: url("../img/location.png");
+  background-position: 20px center;
+}
+
+.tiles .tile-content input.phone, .tiles .tile-content .phone.textarea {
+  background-image: url("../img/phone.png");
+  background-position: 20px center;
+}
+
+
+.tiles .tile-content input, .tiles .tile-content .textarea  {
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #c6c6c6;
+    border-radius: 2px;
+    background-color: #f4f4f4;
+    background-repeat: no-repeat;
+    color: #afafaf;
+    margin-bottom: 20px;
+    text-indent: 80px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.tiles .tile-content input::placeholder, .tiles .tile-content .textarea::placeholder {
+  color: #afafaf;
+}
+
+.tiles .tile-content input:focus, .tiles .tile-content .textarea:focus {
+  cursor: text;
+}
+
+.tiles .tile-content input::placeholder, .tiles .tile-content .textarea::placeholder {
+  color: #afafaf;
+}
+
+.tiles .tile-content input:focus, .tiles .tile-content .textarea:focus {
+  cursor: text;
+}
+
+.tiles .tile-content .textarea {
+  margin-top: 20px;
+  text-indent: 15px;
+  padding: 15px 0;
+  resize: none;
+  height: 230px;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  vertical-align: top;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    color: #afafaf;
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+
+.tiles .tile-content input:last-of-type, .tiles .tile-content .textarea:last-of-type, .tile .tile-content input:last-child {
+    margin-bottom: 0;
+}
+.checkbox-wrapper input.checkbox, .checkbox-wrapper .tiles .tile-content .checkbox.textarea, .tiles .tile-content .checkbox-wrapper .checkbox.textarea {
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 25px;
+    min-width: 25px;
+    height: 25px;
+    min-height: 25px;
+    position: relative;
+    
+}
+
+.checkbox-wrapper input.checkbox:focus, .checkbox-wrapper .tiles .tile-content .checkbox.textarea:focus, .tiles .tile-content .checkbox-wrapper .checkbox.textarea:focus {
+  cursor: pointer;
+}
+
+.checkbox-wrapper input.checkbox:checked:after, .checkbox-wrapper .tiles .tile-content .checkbox.textarea:checked:after, .tiles .tile-content .checkbox-wrapper .checkbox.textarea:checked:after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  background: #93d02b;
+  border-radius: 2px;
+}
+
+.checkbox-wrapper label {
+    margin-left: 15px;
+    cursor: pointer;
+    line-height: 100%;
+}
+
+.tiles .btn {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 10px;
+    color: #fff;
+    text-shadow: 1px 1px 0 #51850e;
+    background-color: #93d02b;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%); 
+    border: 1px solid #3b9a00;
+    border-radius: 2px;
+    font-family: 'Titillium Web', sans-serif;
+    cursor: pointer;
+}
+
+.tiles .btn:hover {
+  background-color: #3b9a00;
+}
+
+
+.tiles .tile-content .textarea {
+    margin-top: 20px;
+    text-indent: 15px;
+    padding: 15px 0;
+    width: 100%;
+    height: 220px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    
+}
+
+.tiles .tile-content .row-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.tiles .tile-content .row-btn .checkbox-wrapper {
+    margin: 0;
+}
+
+.tiles .tile-content .row-btn .btn {
+    width: 140px;
+    height: 100%;
+}
+
+.tiles .tile-content .row-btn .btn:last-child {
+    margin-left: 5px;
+}
+
+.tiles .tile-content .row-btn .btn:disabled {
+    background-color: #bcdb97;
+    border: 1px solid #90ca6d;
+    cursor: default;
+}
+
+.tiles .tile-content .row-btn .btn.danger {
+    background-color: #f4495b;
+    border: 1px solid #a2202a;
+}
+
+.tiles .tile-content .row-btn .btn.danger:hover {
+  background-color: #a2202a;
+}
+
+.tiles .tile-content .row-btn .btn:last-child {
+  margin-left: 5px;
+}
+/* 
+@media all and (max-width 480px) {
+
+    .logo img {
+        margin: 35px 0 15px 0;
+    }
+
+    .logo.logo-bottom img {
+        margin: 10px 0 40px 0;
+    }
+
+    .form-title {
+        margin-bottom: 14px;
+        font-size: 25px;
+    }
+
+    .tiles {
+        padding: 16px;
+        margin-bottom: 25px;
+    }
+
+    .tiles .tile-content {
+        padding: 18px;
+    }
+
+    .tiles .tile-content input,
+    .tiles .tile-content .textarea {
+        height: 35px ;
+        font-size: 14px;
+    }
+
+    .tiles .tile-content .textarea {
+        height: 180px;
+    }
+
+    .tiles .tile-content .row-btn {
+        margin-top: 18px;
+    }
+
+    .tiles .btn {
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+
+    .checkbox-wrapper {
+        font-size: 14px;
+    }
+
+    .checkbox-wrapper input.checkbox,
+    .checkbox-wrapper .tiles .tile-content .checkbox.textarea,
+    .tiles .tile-content .checkbox-wrapper .checkbox.textarea {
+        width: 22px;
+        height: 22px;
+        min-height: 22px;
+        min-width: 22px;
+    }
+
+    .checkbox-wrapper input.checkbox:checked:after,
+    .checkbox-wrapper .tiles .tile-content .checkbox.textarea:checked:after,
+    .tiles .tile-content .checkbox-wrapper .checkbox.textarea:checked:after {
+        height: 12px;
+        width: 12px;
+    }
+
+    .checkbox-wrapper label {
+        margin-left: 10px;
+    }
+}
+*/
+
+
+
